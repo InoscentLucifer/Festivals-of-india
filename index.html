@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <script src="https://fpyf8.com/88/tag.min.js" data-zone="151395" async data-cfasync="false"></script>
+    <script src="https://fpyf8.com/88/tag.min.js" data-zone="151397" async data-cfasync="false"></script>
     <meta charset="UTF-8">
     <title>वट सावित्री व्रत की  शुभकामनाएं</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +15,12 @@
             color: #6b2b06;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             text-align: center;
             position: relative;
         }
 
-        /* Enhanced background with image and gradient overlay */
         body::before {
             content: "";
             position: fixed;
@@ -43,7 +41,7 @@
             box-shadow: 0 8px 32px rgba(120, 40, 10, 0.22);
             max-width: 500px;
             width: 95vw;
-            margin: auto;
+            margin: 20px auto;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -108,6 +106,15 @@
             background-color: #1ebe5b;
         }
 
+        .ad-container {
+            z-index: 2;
+            margin: 10px 0;
+            width: 320px;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
         @keyframes popIn {
             0% { transform: scale(0.8); opacity: 0; }
             100% { transform: scale(1); opacity: 1; }
@@ -131,13 +138,20 @@
         function shareMessage() {
             const name = document.getElementById("nameInput").value.trim();
             const greeting = "🌳 वट सावित्री व्रत की हार्दिक शुभकामनाएं!\nइस पावन व्रत पर माँ सावित्री की कृपा आप पर बनी रहे,\nसुख, समृद्धि और सौभाग्य आपके जीवन में हमेशा रहे।";
-            const fullMessage = name ? `प्रिय ${name},\n${greeting}` : greeting;
+            const siteLink = "\n\n🌐 अधिक जानकारी के लिए देखें:\nhttps://vat-savitri-2025.vercel.app/";
+            const fullMessage = name ? `प्रिय ${name},\n${greeting}${siteLink}` : `${greeting}${siteLink}`;
             const url = "https://wa.me/?text=" + encodeURIComponent(fullMessage);
             window.open(url, '_blank');
         }
     </script>
 </head>
 <body>
+
+    <!-- Ad Block 1 -->
+    <div class="ad-container">
+    </div>
+
+    <!-- Main Greeting Content -->
     <div class="greeting-card">
         <img src="https://pplx-res.cloudinary.com/image/upload/v1749395719/user_uploads/67369874/703846b0-c193-4dff-a766-4a8b10a81309/vat-savitri-vrat-2025_cc1c8c13c4432e42e32bc7afc590c592.jpg" alt="वट सावित्री व्रत" />
         <h1>🌳 वट सावित्री व्रत की शुभकामनाएं 🌳</h1>
@@ -152,5 +166,19 @@
             </button>
         </div>
     </div>
+
+    <!-- Ad Block 2 -->
+    <div class="ad-container">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '53bedeb0525afd91041d3487cdb4aead',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+            };
+        </script>
+    </div>
+
 </body>
-  </html>
+</html>
